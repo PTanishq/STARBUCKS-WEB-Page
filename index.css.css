@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:#F9F9F9;
+    font-family:'kalnia';
+}
+
+.navbar{
+    background-color: #F2F0EB;
+    font-family: 'lato';
+    font-weight: 800;
+    position: sticky;
+}
+
+.navbar img{
+    height: 3rem;
+}
+
+.navbar .btn{
+    border: none;
+}
+
+
+.neeche{
+    display:flex ;
+    flex-direction: column;
+}
+
+.main-content1{
+
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9F9;
+    background-image: url(https://images.unsplash.com/photo-1637290742802-3c8a0f5bd49b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.main-content2{
+    width: 100%;
+    height: 100vhvh;
+    background-color: #F2F0EB;
+  
+}
+
+.main-content1 .left-p{
+    transition-duration: 0.6s;
+    font-family: 'paytone one';
+    margin-left: 3rem;
+    margin-top: 15%;
+    border: 1px solid white;
+    border-radius: 2rem;
+    border-bottom-right-radius:0rem;
+    background-color: #F2F0EB;
+    color: #1E3932;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    height: 8rem;
+    width: 13rem;
+
+}
+
+.left-p h1{
+    margin: 0 2rem 0 2rem;
+}
+.left-p h5{
+    margin: 0 2rem 0 2rem;
+}
+
+.main-content1 .right-p h1{
+    font-size: 3rem;
+
+}
+
+.main-content1 .right-p{
+    transition-duration: 0.6s;
+    border: 1px solid #F2F0EB;
+    border-radius: 3rem;
+    border-bottom-left-radius: 0rem;
+    background-color: #F2F0EB;
+    height: 13rem;
+    width: 20rem;
+    font-family: 'paytone one';
+    position: relative;
+    color: #1E3932;
+    text-transform: capitalize;
+    font-size: 0.5rem;
+    margin-top: 15%;
+    margin-left: 50%;
+}
+
+.right-p h2{
+    margin: 0.5rem 2rem 0 2rem;
+}
+  
+.right-p h1{
+    margin: 0 2rem 0 2rem;
+}
+
+.main-content1 .right-p:hover{
+    border-bottom-left-radius: 3rem;
+    transition: 0.6s;
+    transform: scale(1.08);
+    
+
+}
+
+.main-content1 .left-p:hover{
+    border-bottom-right-radius: 2rem;
+    transition: 0.6s;
+    transform: scale(1.08);
+}
+
+.main-content2{
+    display: flex;
+}
+.main-content2 .left{
+    height: 100%;
+    width: 50%;
+}
+
+.main-content2 .top h3{
+    border: 1px solid transparent;
+    background-color: #3E8269;
+    color: #F2F0EB;
+    font-family: 'paytone one';
+    border-radius: 2rem;
+    border-bottom-left-radius:0 ;
+    width: 13rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.main-content2 h3{
+    margin-top: 5rem ;
+    margin-left: 50%;
+}
+.main-content2 h3 p{
+    margin: 0.8rem;
+}
+.main-content2 .right{
+    height: 100%;
+    width: 50%;
+}
+.main-content2 .right .top img{
+    height: 20rem;
+    margin-left: 15%;
+    margin-top:0%;
+}
+
+.main-content2 .left{
+    margin-left: 10rem;
+}
+
+.main-content2 .left h1{
+    margin-top: 20%;
+    font-weight: 900;
+}
+
+.main-content2 .left h3{
+    width: 33rem;
+    margin-left: 0%;
+    font-size: 1.5rem;
+} 
+
+.main-content2 .left .badge{
+    margin-top: 1rem; 
+}
+
+
+
+@media(max-width:500px) {
+
+   
+
+    .main-content1{
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .left-p{
+        transform: scale(0.7);
+    }
+    .main-content1 .left-p{
+        width: 45%;
+        
+    }
+
+    .main-content1 .right-p{
+        transform: scale(0.6);
+        width: fit-content;
+        border-bottom-right-radius: 3rem;
+    }
+    
+    .main-content1 .right-p:hover{
+        transform: scale(0.5);
+    }
+
+    .main-content1 .left-p:hover{
+        transform: scale(0.5);
+    }
+
+    .main-content2{
+        display: flex;
+        height: 110vh;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .main-content2 .left{
+        margin-left: 0;
+    }
+    
+    .main-content2 .right .top img{
+        height: 13rem;
+
+    }
+
+    .main-content2 .right h3{
+        transform: scale(0.5);
+    }
+    
+    .main-content2 .right{
+        height: 80%;
+    }
+    .main-content2 .texts h1{
+       display: none;
+    }
+
+    .main-content2 .texts h3{
+        font-size: 1rem;
+        margin-top: 0;
+        width: 100%;
+        margin-left: 3rem;
+    }
+
+}
